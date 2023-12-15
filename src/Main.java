@@ -36,6 +36,9 @@ public class Main {
             data = input.split("\\/");
             znak = "/";
         }
+        if(data.length>2 ){
+            throw new UnsupportedOperationException();
+        }
         if (Roman.toRoman(data[0]) && Roman.toRoman(data[1])) {
             num1 = Roman.toArabicConverter(data[0]);
             num2 = Roman.toArabicConverter(data[1]);
